@@ -24,3 +24,5 @@ function MyForm() {
 }
 
 export default MyForm;
+
+//tambien se puede hacer sin useRef: y en el onchange, dentro del setValue se pone el e.target.value. el useEffect no es necesario

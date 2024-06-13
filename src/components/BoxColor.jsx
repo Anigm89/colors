@@ -14,7 +14,7 @@ function BoxColor ({color, value}) {
 
  const colorCss = {
   color: classList == `box ${value}` ?  'black' : color,
-  backgroundColor: classList == `box ${value}` ?  color : 'white',
+  backgroundColor: classList.value == `box ${value}` ?  color : 'white',
   borderColor:  color
  }
  
@@ -22,7 +22,7 @@ function BoxColor ({color, value}) {
     <>
     <div className={`box ${color}`}  ref={boxRef} style={colorCss} > 
     {color === value ?
-      (<p>Soy el color {color} </p>)
+      (<p>Soy el color {value} </p>)
       : (<p> I´m not a {value} color </p>)
     }
     </div>
